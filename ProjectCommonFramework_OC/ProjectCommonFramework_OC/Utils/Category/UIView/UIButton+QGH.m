@@ -10,6 +10,69 @@
 #import <objc/runtime.h>
 @implementation UIButton (QGH)
 
+/*!
+ * 设置按钮正常状态下的图片
+ */
+- (void)setNormalImageName:(NSString *)imageName {
+    [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+}
+
+- (void)setNormalImage:(UIImage *)image {
+    [self setImage:image forState:UIControlStateNormal];
+}
+
+- (void)setNormalImageWithColor:(UIColor *)color {
+    UIImage *image = [[UIImage alloc]changeColor:color];
+    [self setImage:image forState:UIControlStateNormal];
+}
+
+- (void)setNormal:(UIColor *)color hightlighted:(UIColor *)hgColor {
+    [self setNormalImageWithColor:color];
+    [self setHightlightedImageWithColor:hgColor];
+}
+
+- (void)setNormal:(UIColor *)color selected:(UIColor *)selColor {
+    [self setNormalImageWithColor:color];
+    [self setSelectedImageWithColor:selColor];
+}
+
+- (void)setNormal:(UIColor *)color hightlighted:(UIColor *)hgColor selected:(UIColor *)selColor {
+    [self setNormal:color hightlighted:hgColor];
+    [self setSelectedImageWithColor:selColor];
+}
+
+/*!
+ * 设置按钮Hightlighted状态下的图片
+ */
+- (void)setHightlightedImageName:(NSString *)imageName {
+    [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateHighlighted];
+}
+
+- (void)setHightlightedImage:(UIImage *)image {
+    [self setImage:image forState:UIControlStateHighlighted];
+}
+
+- (void)setHightlightedImageWithColor:(UIColor *)color {
+    UIImage *image = [[UIImage alloc]changeColor:color];
+    [self setImage:image forState:UIControlStateHighlighted];
+}
+
+/*!
+ * 设置按钮Selected状态下的图片
+ */
+- (void)setSelectedImageName:(NSString *)imageName {
+    [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateSelected];
+}
+
+- (void)setSelectedImage:(UIImage *)image {
+    [self setImage:image forState:UIControlStateSelected];
+}
+
+- (void)setSelectedImageWithColor:(UIColor *)color {
+    UIImage *image = [[UIImage alloc]changeColor:color];
+    [self setImage:image forState:UIControlStateSelected];
+}
+
 #pragma mark - 文字&字体
 - (void)setTitleFont:(UIFont *)font {
     self.titleLabel.font = font;
@@ -17,35 +80,37 @@
 - (void)setTitleFontSize:(CGFloat)size {
     self.titleLabel.font = [UIFont systemFontOfSize:size];
 }
-- (void)setNorTitle:(NSString *)title {
+- (void)setNormalTitle:(NSString *)title {
     [self setTitle:title forState:UIControlStateNormal];
 }
-- (void)setSelTitle:(NSString *)title {
+- (void)setSelectTitle:(NSString *)title {
     [self setTitle:title forState:UIControlStateSelected];
 }
-- (void)setHigTitle:(NSString *)title {
+
+- (void)setHightTitle:(NSString *)title {
     [self setTitle:title forState:UIControlStateHighlighted];
 }
+
 
 #pragma mark - 设置背景
 
 /*!
  *  设置UIControlStateNormal 背景
  */
-- (void)setNorBGImageName:(NSString *)name {
-    [self setNorBGImage:[UIImage imageNamed:name]];
+- (void)setNormalBgImageName:(NSString *)name {
+    [self setNormalBgImage:[UIImage imageNamed:name]];
 }
-- (void)setNorBGImage:(UIImage *)img {
+- (void)setNormalBgImage:(UIImage *)img {
     [self setBackgroundImage:img forState:UIControlStateNormal];
 }
 
 /*!
  *  设置UIControlStateHighlighted 背景
  */
-- (void)setHigBGImageName:(NSString *)name {
-    [self setHigBGImage:[UIImage imageNamed:name]];
+- (void)setHightBgImageName:(NSString *)name {
+    [self setHightBgImage:[UIImage imageNamed:name]];
 }
-- (void)setHigBGImage:(UIImage *)img {
+- (void)setHightBgImage:(UIImage *)img {
     [self setBackgroundImage:img forState:UIControlStateHighlighted];
 }
 
@@ -53,25 +118,11 @@
 /*!
  *  设置UIControlStateSelected 背景
  */
-- (void)setSelBGImageName:(NSString *)name {
-    [self setSelBGImage:[UIImage imageNamed:name]];
+- (void)setSelectBgImageName:(NSString *)name {
+    [self setSelectBgImage:[UIImage imageNamed:name]];
 }
-- (void)setSelBGImage:(UIImage *)img {
+- (void)setSelectBgImage:(UIImage *)img {
     [self setBackgroundImage:img forState:UIControlStateSelected];
-}
-
-
-
-/**
- 设置btn图片
-
- @param name 图片名字
- */
-- (void)setNorImageName:(NSString *)name {
-    [self setNorImage:[UIImage imageNamed:name]];
-}
-- (void)setNorImage:(UIImage *)img {
-    [self setImage:img forState:UIControlStateNormal];
 }
 
 /**
@@ -79,23 +130,11 @@
 
  @param name 图片名字
  */
-- (void)setHigImageName:(NSString *)name {
-    [self setHigImage:[UIImage imageNamed:name]];
+- (void)setHightImageName:(NSString *)name {
+    [self setHightImage:[UIImage imageNamed:name]];
 }
-- (void)setHigImage:(UIImage *)img {
+- (void)setHightImage:(UIImage *)img {
     [self setImage:img forState:UIControlStateHighlighted];
-}
-
-/**
-  设置选中btn图片
-
- @param name 图片名字
- */
-- (void)setSelImageName:(NSString *)name {
-    [self setSelImage:[UIImage imageNamed:name]];
-}
-- (void)setSelImage:(UIImage *)img {
-    [self setImage:img forState:UIControlStateSelected];
 }
 
 
@@ -150,10 +189,7 @@
     return indexPath;
 }
 
-
 #pragma mark - 修改点击区域
-
-
 static char topNameKey;
 static char rightNameKey;
 static char bottomNameKey;
@@ -193,9 +229,6 @@ static char leftNameKey;
     return CGRectContainsPoint(rect, point) ? self : nil;
 }
 
-
-
-
 #pragma mark - 其他
 //设置文字和图片位置
 -(void)setTitleAndImageWithLeftTitle:(BOOL)isLeft interval:(CGFloat)interval
@@ -222,7 +255,7 @@ static char leftNameKey;
     self.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
-
+/*! 贴纸底部button  图片在上，文字在下 */
 + (UIButton *)creatBottomButtonWithFarme:(CGRect)frame title:(NSString *)title font:(CGFloat)font imageName:(NSString *)imageName {
     
     UIButton *btn = [[UIButton alloc]initWithFrame:frame];

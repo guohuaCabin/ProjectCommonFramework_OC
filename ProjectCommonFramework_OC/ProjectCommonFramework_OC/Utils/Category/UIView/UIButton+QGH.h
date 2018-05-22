@@ -10,43 +10,63 @@
 
 @interface UIButton (QGH)
 
+/*!
+ * 设置按钮正常状态下的图片
+ */
+- (void)setNormalImageName:(NSString *)imageName;
+- (void)setNormalImage:(UIImage *)image;
+- (void)setNormalImageWithColor:(UIColor *)color;
+
+/*!
+ * 设置按钮Hightlighted状态下的图片
+ */
+- (void)setHightlightedImageName:(NSString *)imageName;
+- (void)setHightlightedImage:(UIImage *)image;
+- (void)setHightlightedImageWithColor:(UIColor *)color;
+
+/*!
+ * 设置按钮Selected状态下的图片
+ */
+- (void)setSelectedImageName:(NSString *)imageName;
+- (void)setSelectedImage:(UIImage *)image;
+- (void)setSelectedImageWithColor:(UIColor *)color;
+
+/*!
+ * 设置按钮状态下的图片
+ */
+- (void)setNormal:(UIColor *)color hightlighted:(UIColor *)hgColor;
+- (void)setNormal:(UIColor *)color selected:(UIColor *)selColor;
+- (void)setNormal:(UIColor *)color hightlighted:(UIColor *)hgColor selected:(UIColor *)selColor;
+
 #pragma mark - 文字&字体
 
 - (void)setTitleFont:(UIFont *)font;
 - (void)setTitleFontSize:(CGFloat)size;
 
-- (void)setNorTitle:(NSString *)title;
-- (void)setSelTitle:(NSString *)title;
-- (void)setHigTitle:(NSString *)title;
-
-
-#pragma mark - 设置背景
-
-- (void)setNorBGImageName:(NSString *)name;
-- (void)setNorBGImage:(UIImage *)img;
-
-- (void)setHigBGImageName:(NSString *)name;
-- (void)setHigBGImage:(UIImage *)img;
-
-- (void)setSelBGImageName:(NSString *)name;
-- (void)setSelBGImage:(UIImage *)img;
-
-- (void)setNorImageName:(NSString *)name;
-- (void)setNorImage:(UIImage *)img;
-
-- (void)setHigImageName:(NSString *)name;
-- (void)setHigImage:(UIImage *)img;
-
-- (void)setSelImageName:(NSString *)name;
-- (void)setSelImage:(UIImage *)img;
-
-#pragma mark - 设置背景颜色
-
-- (void)setBgColor:(UIColor *)color forState:(UIControlState)state;
-- (void)setHighlightedBgColor:(UIColor *)color;
-- (void)setSelectedBgColor:(UIColor *)color;
+#pragma mark - 设置
+//正常
+- (void)setNormalTitle:(NSString *)title;
+- (void)setNormalBgImageName:(NSString *)name;
+- (void)setNormalBgImage:(UIImage *)img;
 - (void)setNormalBgColor:(UIColor *)color;
 
+//高亮
+- (void)setHightTitle:(NSString *)title;
+- (void)setHightImageName:(NSString *)name;
+- (void)setHightImage:(UIImage *)img;
+- (void)setHightBgImageName:(NSString *)name;
+- (void)setHightBgImage:(UIImage *)img;
+- (void)setHighlightedBgColor:(UIColor *)color;
+
+//选中
+- (void)setSelectTitle:(NSString *)title;
+
+- (void)setSelectBgImage:(UIImage *)img;
+- (void)setSelectBgImageName:(NSString *)name;
+- (void)setSelectedBgColor:(UIColor *)color;
+
+#pragma mark - 设置背景颜色
+- (void)setBgColor:(UIColor *)color forState:(UIControlState)state;
 
 #pragma mark - 获取tableviewCell的NSIndexPath
 /** 获取btn 当前的NSIndexPath */
@@ -61,7 +81,7 @@
 - (void)setEnlargeEdgeWithTop:(CGFloat)top right:(CGFloat)right bottom:(CGFloat)bottom left:(CGFloat)left;
 
 
-#pragma mark - 其他
+#pragma mark - 设置文字和图片的位置
 //设置文字和图片正常位置
 -(void)setTitleAndImageWithNormalState;
 //设置文字和图片位置

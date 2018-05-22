@@ -89,5 +89,7 @@
  */
 + (UIImage *)imageWithColor:(UIColor *)color andSize:(CGSize)size;
 
+// 画虚线
++ (UIImage*)dottedImageWithStartPoint:(CGPoint)startPoint EndPoint:(CGPoint)endPoint Color:(UIColor *)color Width:(NSInteger)width;
 
 @end

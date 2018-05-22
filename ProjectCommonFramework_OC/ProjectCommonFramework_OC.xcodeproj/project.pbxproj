@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A02F44320B45DEB00767B84 /* TopBottomLabView_QGH.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A02F44220B45DEB00767B84 /* TopBottomLabView_QGH.m */; };
+		1A02F44620B45E3700767B84 /* TopImgBottomLabView_QGH.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A02F44520B45E3700767B84 /* TopImgBottomLabView_QGH.m */; };
+		1A02F44920B45E4500767B84 /* LeftImgRightLabView_QGH.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A02F44820B45E4500767B84 /* LeftImgRightLabView_QGH.m */; };
+		1A02F44C20B45E5A00767B84 /* RightImgLeftLabView_QGH.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A02F44B20B45E5A00767B84 /* RightImgLeftLabView_QGH.m */; };
+		1A02F44F20B45E8700767B84 /* LeftRightLabView_QGH.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A02F44E20B45E8700767B84 /* LeftRightLabView_QGH.m */; };
 		1A06EC4520AC38A000D2F3CE /* UIImage+QGH.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A06EC1B20AC38A000D2F3CE /* UIImage+QGH.m */; };
 		1A06EC4620AC38A000D2F3CE /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A06EC2120AC38A000D2F3CE /* GTMBase64.m */; };
 		1A06EC4720AC38A000D2F3CE /* NSString+LTEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A06EC2420AC38A000D2F3CE /* NSString+LTEncryption.m */; };
@@ -22,6 +27,9 @@
 		1A06EC5120AC38A000D2F3CE /* NSObject+QGH.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A06EC3E20AC38A000D2F3CE /* NSObject+QGH.m */; };
 		1A06EC5220AC38A000D2F3CE /* NSDate+QGH.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A06EC4020AC38A000D2F3CE /* NSDate+QGH.m */; };
 		1A06EC5320AC38A000D2F3CE /* NSUserDefaults+QGH.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A06EC4420AC38A000D2F3CE /* NSUserDefaults+QGH.m */; };
+		1A41046220AFDEDF00DBF69B /* UIView+QGHCreateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41046120AFDEDF00DBF69B /* UIView+QGHCreateUtils.m */; };
+		1A41046520AFDF1800DBF69B /* UIView+QGHStringTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41046420AFDF1800DBF69B /* UIView+QGHStringTag.m */; };
+		1A41046820AFE12E00DBF69B /* UILabel+QGH.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41046720AFE12E00DBF69B /* UILabel+QGH.m */; };
 		1A45E6B620AC7AB000F69198 /* WebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A45E6B120AC7AB000F69198 /* WebViewProgress.m */; };
 		1A45E6B720AC7AB000F69198 /* WKWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A45E6B520AC7AB000F69198 /* WKWebVC.m */; };
 		1A9C726C20A6C2A700F47441 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C726B20A6C2A700F47441 /* ViewController.m */; };
@@ -51,6 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A02F44120B45DEB00767B84 /* TopBottomLabView_QGH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopBottomLabView_QGH.h; sourceTree = "<group>"; };
+		1A02F44220B45DEB00767B84 /* TopBottomLabView_QGH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopBottomLabView_QGH.m; sourceTree = "<group>"; };
+		1A02F44420B45E3700767B84 /* TopImgBottomLabView_QGH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopImgBottomLabView_QGH.h; sourceTree = "<group>"; };
+		1A02F44520B45E3700767B84 /* TopImgBottomLabView_QGH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopImgBottomLabView_QGH.m; sourceTree = "<group>"; };
+		1A02F44720B45E4500767B84 /* LeftImgRightLabView_QGH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftImgRightLabView_QGH.h; sourceTree = "<group>"; };
+		1A02F44820B45E4500767B84 /* LeftImgRightLabView_QGH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftImgRightLabView_QGH.m; sourceTree = "<group>"; };
+		1A02F44A20B45E5A00767B84 /* RightImgLeftLabView_QGH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RightImgLeftLabView_QGH.h; sourceTree = "<group>"; };
+		1A02F44B20B45E5A00767B84 /* RightImgLeftLabView_QGH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RightImgLeftLabView_QGH.m; sourceTree = "<group>"; };
+		1A02F44D20B45E8700767B84 /* LeftRightLabView_QGH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftRightLabView_QGH.h; sourceTree = "<group>"; };
+		1A02F44E20B45E8700767B84 /* LeftRightLabView_QGH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftRightLabView_QGH.m; sourceTree = "<group>"; };
 		1A06EC1B20AC38A000D2F3CE /* UIImage+QGH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QGH.m"; sourceTree = "<group>"; };
 		1A06EC1C20AC38A000D2F3CE /* UIImage+QGH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+QGH.h"; sourceTree = "<group>"; };
 		1A06EC1F20AC38A000D2F3CE /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -81,6 +99,12 @@
 		1A06EC4120AC38A000D2F3CE /* NSDate+QGH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+QGH.h"; sourceTree = "<group>"; };
 		1A06EC4320AC38A000D2F3CE /* NSUserDefaults+QGH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+QGH.h"; sourceTree = "<group>"; };
 		1A06EC4420AC38A000D2F3CE /* NSUserDefaults+QGH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+QGH.m"; sourceTree = "<group>"; };
+		1A41046020AFDEDF00DBF69B /* UIView+QGHCreateUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+QGHCreateUtils.h"; sourceTree = "<group>"; };
+		1A41046120AFDEDF00DBF69B /* UIView+QGHCreateUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+QGHCreateUtils.m"; sourceTree = "<group>"; };
+		1A41046320AFDF1800DBF69B /* UIView+QGHStringTag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+QGHStringTag.h"; sourceTree = "<group>"; };
+		1A41046420AFDF1800DBF69B /* UIView+QGHStringTag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+QGHStringTag.m"; sourceTree = "<group>"; };
+		1A41046620AFE12E00DBF69B /* UILabel+QGH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+QGH.h"; sourceTree = "<group>"; };
+		1A41046720AFE12E00DBF69B /* UILabel+QGH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+QGH.m"; sourceTree = "<group>"; };
 		1A45E6AB20AC75F300F69198 /* ProjectCommonFramework_OC.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectCommonFramework_OC.pch; sourceTree = "<group>"; };
 		1A45E6B120AC7AB000F69198 /* WebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewProgress.m; sourceTree = "<group>"; };
 		1A45E6B220AC7AB000F69198 /* WebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewProgress.h; sourceTree = "<group>"; };
@@ -139,7 +163,8 @@
 		1A06EC1720AC38A000D2F3CE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				1A06EC1920AC38A000D2F3CE /* Guide */,
+				1A41043520AFD57400DBF69B /* Commom */,
+				1A41043420AFD31800DBF69B /* Guide */,
 				1A06EC1820AC38A000D2F3CE /* Category */,
 			);
 			path = Utils;
@@ -152,7 +177,7 @@
 				1A06EC1D20AC38A000D2F3CE /* Encryption */,
 				1A06EC2620AC38A000D2F3CE /* UIView */,
 				1A06EC2F20AC38A000D2F3CE /* WebView */,
-				1A06EC3020AC38A000D2F3CE /* Utils */,
+				1A06EC3120AC38A000D2F3CE /* NullSafe */,
 				1A06EC3320AC38A000D2F3CE /* Object */,
 				1A06EC3F20AC38A000D2F3CE /* NSDate */,
 				1A06EC4220AC38A000D2F3CE /* NSUserDefault */,
@@ -160,18 +185,11 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		1A06EC1920AC38A000D2F3CE /* Guide */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Guide;
-			sourceTree = "<group>";
-		};
 		1A06EC1A20AC38A000D2F3CE /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
-				1A06EC1B20AC38A000D2F3CE /* UIImage+QGH.m */,
 				1A06EC1C20AC38A000D2F3CE /* UIImage+QGH.h */,
+				1A06EC1B20AC38A000D2F3CE /* UIImage+QGH.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -209,6 +227,12 @@
 				1A06EC2A20AC38A000D2F3CE /* UIView+QGHGesture.m */,
 				1A06EC2820AC38A000D2F3CE /* UIView+QGHLayer.h */,
 				1A06EC2B20AC38A000D2F3CE /* UIView+QGHLayer.m */,
+				1A41046020AFDEDF00DBF69B /* UIView+QGHCreateUtils.h */,
+				1A41046120AFDEDF00DBF69B /* UIView+QGHCreateUtils.m */,
+				1A41046320AFDF1800DBF69B /* UIView+QGHStringTag.h */,
+				1A41046420AFDF1800DBF69B /* UIView+QGHStringTag.m */,
+				1A41046620AFE12E00DBF69B /* UILabel+QGH.h */,
+				1A41046720AFE12E00DBF69B /* UILabel+QGH.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -220,14 +244,6 @@
 				1A45E6B320AC7AB000F69198 /* WKWebView */,
 			);
 			path = WebView;
-			sourceTree = "<group>";
-		};
-		1A06EC3020AC38A000D2F3CE /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				1A06EC3120AC38A000D2F3CE /* NullSafe */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		1A06EC3120AC38A000D2F3CE /* NullSafe */ = {
@@ -260,10 +276,10 @@
 		1A06EC3720AC38A000D2F3CE /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				1A06EC3820AC38A000D2F3CE /* NSString+QGH.h */,
 				1A06EC3920AC38A000D2F3CE /* NSString+ABStr.h */,
-				1A06EC3A20AC38A000D2F3CE /* NSString+QGH.m */,
 				1A06EC3B20AC38A000D2F3CE /* NSString+ABStr.m */,
+				1A06EC3820AC38A000D2F3CE /* NSString+QGH.h */,
+				1A06EC3A20AC38A000D2F3CE /* NSString+QGH.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -280,8 +296,8 @@
 		1A06EC3F20AC38A000D2F3CE /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
-				1A06EC4020AC38A000D2F3CE /* NSDate+QGH.m */,
 				1A06EC4120AC38A000D2F3CE /* NSDate+QGH.h */,
+				1A06EC4020AC38A000D2F3CE /* NSDate+QGH.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -293,6 +309,30 @@
 				1A06EC4420AC38A000D2F3CE /* NSUserDefaults+QGH.m */,
 			);
 			path = NSUserDefault;
+			sourceTree = "<group>";
+		};
+		1A41043420AFD31800DBF69B /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		1A41043520AFD57400DBF69B /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				1A02F44720B45E4500767B84 /* LeftImgRightLabView_QGH.h */,
+				1A02F44820B45E4500767B84 /* LeftImgRightLabView_QGH.m */,
+				1A02F44D20B45E8700767B84 /* LeftRightLabView_QGH.h */,
+				1A02F44E20B45E8700767B84 /* LeftRightLabView_QGH.m */,
+				1A02F44A20B45E5A00767B84 /* RightImgLeftLabView_QGH.h */,
+				1A02F44B20B45E5A00767B84 /* RightImgLeftLabView_QGH.m */,
+				1A02F44120B45DEB00767B84 /* TopBottomLabView_QGH.h */,
+				1A02F44220B45DEB00767B84 /* TopBottomLabView_QGH.m */,
+				1A02F44420B45E3700767B84 /* TopImgBottomLabView_QGH.h */,
+				1A02F44520B45E3700767B84 /* TopImgBottomLabView_QGH.m */,
+			);
+			path = Commom;
 			sourceTree = "<group>";
 		};
 		1A45E6AF20AC7AB000F69198 /* UIWebVIew */ = {
@@ -537,21 +577,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A02F44620B45E3700767B84 /* TopImgBottomLabView_QGH.m in Sources */,
 				1A06EC4820AC38A000D2F3CE /* NSData+LTEncryption.m in Sources */,
+				1A02F44C20B45E5A00767B84 /* RightImgLeftLabView_QGH.m in Sources */,
 				1A45E6B620AC7AB000F69198 /* WebViewProgress.m in Sources */,
 				1A06EC4B20AC38A000D2F3CE /* UIView+QGHLayer.m in Sources */,
 				1A06EC4720AC38A000D2F3CE /* NSString+LTEncryption.m in Sources */,
 				1A06EC4520AC38A000D2F3CE /* UIImage+QGH.m in Sources */,
+				1A02F44320B45DEB00767B84 /* TopBottomLabView_QGH.m in Sources */,
 				1A9C729F20A6C4C400F47441 /* AppDelegate.m in Sources */,
 				1A06EC4E20AC38A000D2F3CE /* UIColor+QGH.m in Sources */,
+				1A41046520AFDF1800DBF69B /* UIView+QGHStringTag.m in Sources */,
 				1A06EC4620AC38A000D2F3CE /* GTMBase64.m in Sources */,
+				1A02F44920B45E4500767B84 /* LeftImgRightLabView_QGH.m in Sources */,
 				1A06EC5020AC38A000D2F3CE /* NSString+ABStr.m in Sources */,
 				1A9C72A020A6C4C400F47441 /* main.m in Sources */,
 				1A06EC4A20AC38A000D2F3CE /* UIView+QGHGesture.m in Sources */,
 				1A06EC4920AC38A000D2F3CE /* UIButton+QGH.m in Sources */,
 				1A9C726C20A6C2A700F47441 /* ViewController.m in Sources */,
+				1A41046220AFDEDF00DBF69B /* UIView+QGHCreateUtils.m in Sources */,
 				1A45E6B720AC7AB000F69198 /* WKWebVC.m in Sources */,
 				1A06EC5120AC38A000D2F3CE /* NSObject+QGH.m in Sources */,
+				1A02F44F20B45E8700767B84 /* LeftRightLabView_QGH.m in Sources */,
+				1A41046820AFE12E00DBF69B /* UILabel+QGH.m in Sources */,
 				1A06EC4C20AC38A000D2F3CE /* UIView+QGHFrame.m in Sources */,
 				1A06EC5220AC38A000D2F3CE /* NSDate+QGH.m in Sources */,
 				1A06EC4F20AC38A000D2F3CE /* NSString+QGH.m in Sources */,

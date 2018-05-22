@@ -123,9 +123,7 @@
     return [[self toJPEGData:compression] writeToFile:path atomically:YES];
 }
 
-
-#pragma mark - 修改图片颜色
-
+//修改图片颜色
 - (UIImage *)changeColor:(UIColor *)color {
     UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -322,7 +320,7 @@
     }
     return imgData;
 }
-
+//图片缩放到size大小
 -(UIImage*)originImage:(UIImage *)image scaleToSize:(CGSize)size {
     UIGraphicsBeginImageContext(size);  //size 为CGSize类型，即你所需要的图片尺寸
     [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
@@ -451,8 +449,7 @@
     return returnImage;
 }
 
-#pragma mark - 获取图片某一像素的颜色
-
+//获取图片某一像素的颜色
 - (UIColor *)colorAtPixel:(CGPoint)point ImageViewFrame:(CGRect)viewFrame {
     // Cancel if point is outside image coordinates
     if (!CGRectContainsPoint(CGRectMake(0.0f, 0.0f, viewFrame.size.width, viewFrame.size.height), point)) {
@@ -569,6 +566,7 @@
     return img;
 }
 
+// 画纯色图片，指定颜色生成图片
 + (UIImage *)imageWithColor:(UIColor *)color andSize:(CGSize)size
 {
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
@@ -580,5 +578,29 @@
     UIGraphicsEndImageContext();
     return image;
 }
+
+// 画虚线
++ (UIImage*)dottedImageWithStartPoint:(CGPoint)startPoint EndPoint:(CGPoint)endPoint Color:(UIColor *)color Width:(NSInteger)width
+{
+    //NSLog(@"draw start.....");
+    CGRect rect = CGRectMake(0, startPoint.y, width, 1);
+    UIGraphicsBeginImageContext(rect.size);
+    //UIGraphicsBeginImageContextWithOptions(rect.size, YES, [[UIScreen mainScreen] scale]);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetLineWidth(context, width);
+    // 如果是虚线
+    CGFloat lengths[] = {3,3};
+    CGContextSetLineDash(context, 0, lengths, 2);  //画虚线
+    CGContextSetStrokeColorWithColor(context, color.CGColor);
+    const CGPoint point[] = {startPoint,endPoint};
+    CGContextStrokeLineSegments(context, point, 2);  // 绘制
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+    
+}
+
+
 
 @end

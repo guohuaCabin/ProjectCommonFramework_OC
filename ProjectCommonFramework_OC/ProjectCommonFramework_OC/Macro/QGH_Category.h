@@ -9,10 +9,18 @@
 #ifndef QGH_Category_h
 #define QGH_Category_h
 
+//common
+#import "TopBottomLabView_QGH.h"
+#import "LeftRightLabView_QGH.h"
+#import "TopImgBottomLabView_QGH.h"
+#import "LeftImgRightLabView_QGH.h"
+#import "RightImgLeftLabView_QGH.h"
+
 //view
 #import "UIView+QGHFrame.h"
 #import "UIView+QGHLayer.h"
 #import "UIView+QGHGesture.h"
+#import "UIView+QGHCreateUtils.h"
 
 //imageView
 #import "UIImage+QGH.h"
