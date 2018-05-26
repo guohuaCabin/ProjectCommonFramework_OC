@@ -1,5 +1,86 @@
-platform :ios, '8.0'
+platform :ios, '9.0'
 target "ProjectCommonFramework_OC" do
+
+#图片记载
+pod 'SDWebImage', '~> 4.0'
+
+#富文本的 label，可点击链接
+pod 'TTTAttributedLabel'
+
+#正则表达式
+pod 'RegexKitLite-NoWarning', '1.1.0'
+
+#html 解析
+pod 'hpple', '0.2.0'
+
+#hud 提示框
+pod 'MBProgressHUD', '~> 1.1.0'
+
+#下拉刷新
+pod 'MJRefresh'
+
+#效果很酷炫的下拉刷新控件
+pod 'CBStoreHouseRefreshControl'
+
+#下拉刷新的动画 for UIScrollView
+pod 'PullToBounce'
+
+#一款带有弹性效果的 iOS 下拉刷新组件
+pod 'DGElasticPullToRefresh'
+
+#实现弹性物理效果的下拉刷新，神奇的贝塞尔曲线，配合UIDynamic写的一个拟物的下拉刷新动画。
+pod 'KYJellyPullToRefresh', '~> 1.1.0'
+
+#文字滚动
+pod 'MarqueeLabel'
+
+#有文字输入时，能根据键盘是否弹出来调整自身显示内容的位置
+pod 'TPKeyboardAvoiding', '1.2.4'
+
+#状态栏提示框
+pod 'JDStatusBarNotification'
+
+#block 工具包。将很多需要用 delegate 实现的方法整合成了 block 的形式
+pod 'BlocksKit', '2.2.5'
+
+#基于响应式编程思想的 oc 实践（是个好东西呢）
+pod 'ReactiveCocoa', '~> 7.0'
+
+
+#自动布局（加约束）
+pod 'SDAutoLayout', '2.1.0' 
+#pod 'Masonry', '0.5.3'
+
+#内存缓存
+pod 'PINCache'
+pod 'YYCache'
+
+#帧动画的库
+pod 'JazzHands', '2.0.0'
+
+#存储密码
+pod 'SSKeychain', '1.2.3'
+
+#下拉界面的图片,放在tableview 最上面
+pod 'APParallaxHeader', '0.1.6'
+
+#一个形象字体库。通过扩展 NSString 来轻松使用 FontAwesome 字体, 轻松实现基本图标问题;
+pod 'FontAwesome+iOS', :git => 'https://github.com/alexdrone/ios-fontawesome'
+
+
+#第三方SDk
+
+#友盟（统计、分享）
+
+#云信（聊天、视频）
+
+#三方登录（QQ、微信）
+
+#支付（微信、支付宝）
+
+#推送（信鸽、友盟、极光、个推）
+
+
 
 
 end
