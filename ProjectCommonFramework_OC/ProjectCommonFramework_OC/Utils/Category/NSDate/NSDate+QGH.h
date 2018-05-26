@@ -45,4 +45,37 @@
 //时间yyyy.mm.dd
 +(NSString *)dayString:(NSDate*)date;
 
+//判断是不是今天
++ (BOOL)isTodayWithDate:(NSDate *)date;
+/**
+ *  是否为今天
+ */
++ (BOOL)isToday:(NSTimeInterval)time;
+
+/**
+ *  是否为昨天
+ */
++ (BOOL)isYesterday:(NSTimeInterval)time;
+
+/**
+ *  是否为同一天
+ */
++ (BOOL)isSameDay:(NSDate*)date1 date2:(NSDate*)date2;
+
+/**
+ 当前时间是否在时间段内 (忽略年月日)
+ 
+ @param startTime 格式为 --:--(02:22)
+ @param expireTime 格式为 --:--(12:44)
+ @return 返回结果
+ */
++ (BOOL)judgeTimeByStartAndEnd:(NSString *)startTime withExpireTime:(NSString *)expireTime;
+
+
+//注：返回的是数字1，2，。。。
++ (NSInteger)getWeekDayFordate;
+
+//转换成本地时间
++ (NSDate *)getNowDateFromatAnDate:(NSDate *)anyDate;
+
 @end

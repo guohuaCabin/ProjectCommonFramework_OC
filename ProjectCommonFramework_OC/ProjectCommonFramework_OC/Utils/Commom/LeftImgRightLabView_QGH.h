@@ -10,4 +10,6 @@
 
 @interface LeftImgRightLabView_QGH : UIView
 
+-(instancetype)initWithFrame:(CGRect)frame imgViewframe:(CGRect)imgFrame;
+
 @end
