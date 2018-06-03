@@ -10,6 +10,19 @@
 
 @interface LeftImgRightLabView_QGH : UIView
 
--(instancetype)initWithFrame:(CGRect)frame imgViewframe:(CGRect)imgFrame;
+-(instancetype)initWithFrame:(CGRect)frame imgViewframe:(CGRect)imgFrame titleFont:(UIFont *)titleFont;
+
+-(void)setTitle:(NSString *)title;
+
+-(void)setTitleColor:(UIColor *)color;
+
+
+-(void)setTitleColor:(UIColor *)color font:(UIFont *)font;
+
+
+-(void)setImgStr:(NSString *)imgStr;
+
+
+-(void)setImgUrlStr:(NSString *)imgUrlStr;
 
 @end

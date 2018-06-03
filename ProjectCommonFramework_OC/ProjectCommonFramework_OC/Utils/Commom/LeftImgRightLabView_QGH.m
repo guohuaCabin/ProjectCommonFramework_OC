@@ -22,7 +22,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
+        [self setupViewsWithImgFrame:imgFrame titleFont:titleFont];
     }
     return self;
 }
@@ -43,7 +43,9 @@
 
 -(void)setTitle:(NSString *)title
 {
-    _rightLab.text = title;
+    if (notemptyStr(title)) {
+        _rightLab.text = title;
+    }
 }
 -(void)setTitleColor:(UIColor *)color
 {
@@ -58,7 +60,17 @@
 
 -(void)setImgStr:(NSString *)imgStr
 {
-    
+    if (notemptyStr(imgStr)) {
+        _imgView.image = [UIImage imageNamed:imgStr];
+    }
+}
+
+-(void)setImgUrlStr:(NSString *)imgUrlStr
+{
+    if (notemptyStr(imgUrlStr)) {
+        UIImage *img = [UIImage imgUrlStr:imgUrlStr];
+        _imgView.image = img;
+    }
 }
 
 

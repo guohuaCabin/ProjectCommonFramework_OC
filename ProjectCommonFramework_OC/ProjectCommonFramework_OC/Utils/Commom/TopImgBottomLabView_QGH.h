@@ -11,4 +11,15 @@
 
 @interface TopImgBottomLabView_QGH : UIView
 
+-(void)setTitle:(NSString *)title;
+
+-(void)setTitle:(NSString *)title titleColor:(UIColor *)titleColor;
+
+-(void)setImageStr:(NSString *)imageStr;
+
+-(void)setImageUrlStr:(NSString *)imageUrlStr;
+
+-(void)setTitleLabY:(CGFloat)y height:(CGFloat)height;
+
+
 @end

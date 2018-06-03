@@ -1,5 +1,10 @@
+xcodeproj 'ProjectCommonFramework_OC/ProjectCommonFramework_OC.xcodeproj'
+
 platform :ios, '9.0'
 target "ProjectCommonFramework_OC" do
+  
+#异常统计
+pod 'Bugly'
 
 #图片记载
 pod 'SDWebImage', '~> 4.0'
@@ -14,7 +19,7 @@ pod 'RegexKitLite-NoWarning', '1.1.0'
 pod 'hpple', '0.2.0'
 
 #hud 提示框
-pod 'MBProgressHUD', '~> 1.1.0'
+pod 'MBProgressHUD'
 
 #下拉刷新
 pod 'MJRefresh'
@@ -22,11 +27,11 @@ pod 'MJRefresh'
 #效果很酷炫的下拉刷新控件
 pod 'CBStoreHouseRefreshControl'
 
-#下拉刷新的动画 for UIScrollView
-pod 'PullToBounce'
+#下拉刷新的动画 for UIScrollView(swift)
+#pod 'PullToBounce'
 
-#一款带有弹性效果的 iOS 下拉刷新组件
-pod 'DGElasticPullToRefresh'
+#一款带有弹性效果的 iOS 下拉刷新组件 (swift)
+#pod 'DGElasticPullToRefresh'
 
 #实现弹性物理效果的下拉刷新，神奇的贝塞尔曲线，配合UIDynamic写的一个拟物的下拉刷新动画。
 pod 'KYJellyPullToRefresh', '~> 1.1.0'
@@ -43,8 +48,9 @@ pod 'JDStatusBarNotification'
 #block 工具包。将很多需要用 delegate 实现的方法整合成了 block 的形式
 pod 'BlocksKit', '2.2.5'
 
-#基于响应式编程思想的 oc 实践（是个好东西呢）
-pod 'ReactiveCocoa', '~> 7.0'
+#基于响应式编程思想的 oc 实践（是个好东西）
+use_frameworks!
+pod 'ReactiveCocoa' #, '~> 7.0'
 
 
 #自动布局（加约束）

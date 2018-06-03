@@ -10,6 +10,8 @@
 
 @interface LeftRightLabView_QGH : UIView
 
+-(instancetype)initWithFrame:(CGRect)frame;
+
 /**
  set LeftLab
 

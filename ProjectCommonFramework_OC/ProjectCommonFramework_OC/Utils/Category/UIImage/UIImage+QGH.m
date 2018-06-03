@@ -10,6 +10,15 @@
 #import <Accelerate/Accelerate.h>
 @implementation UIImage (QGH)
 
+//根据url字符串返回图片
++(UIImage *)imgUrlStr:(NSString *)urlStr
+{
+    NSURL *imgUrl = [NSURL URLWithString:urlStr];
+    NSData *imgData = [[NSData alloc]initWithContentsOfURL:imgUrl];
+    UIImage *img = [[UIImage alloc]initWithData:imgData];
+    return img;
+}
+
 //改变图片颜色
 - (UIImage *)changeImgColor:(UIColor *)color {
     UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);

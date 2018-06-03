@@ -102,7 +102,8 @@
 #define APPCONFIG_APPID     @""
 
 #pragma mark - **************** 可能修改的常量
-
+//bugly异常统计
+#define kBuglyId @""
 #define kAppMarket @"AppStore"
 //sourceId
 #define kAPPType                    10

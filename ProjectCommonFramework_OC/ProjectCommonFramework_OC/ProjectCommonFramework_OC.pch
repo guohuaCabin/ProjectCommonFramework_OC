@@ -29,8 +29,7 @@
 
 
 //Libs
-
-
+#import <Bugly/Bugly.h>
 
 
 #endif /* ProjectCommonFramework_OC_pch */

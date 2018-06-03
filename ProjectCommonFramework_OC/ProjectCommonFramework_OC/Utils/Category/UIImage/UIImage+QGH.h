@@ -10,6 +10,9 @@
 
 @interface UIImage (QGH)
 
+//根据url字符串返回图片
++(UIImage *)imgUrlStr:(NSString *)urlStr;
+
 //改变图片颜色
 - (UIImage *)changeImgColor:(UIColor *)color;
 #pragma mark - 颜色->图片

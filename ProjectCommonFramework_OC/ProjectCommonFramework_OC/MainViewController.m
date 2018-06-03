@@ -1,29 +1,31 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  ProjectCommonFramework_OC
 //
-//  Created by 秦国华 on 2018/5/12.
+//  Created by 秦国华 on 2018/6/3.
 //  Copyright © 2018年 秦国华. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self navTitle:@"MainVC" backType:BackType_PopVC rightTitle:@"哈哈"];
+    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 @end

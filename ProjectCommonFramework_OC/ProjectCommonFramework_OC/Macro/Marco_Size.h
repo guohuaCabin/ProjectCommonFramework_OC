@@ -35,6 +35,12 @@
 #define ScreenW                 ScreenSize.width
 #define ScreenH                 ScreenSize.height
 
+//左边距
+#define kLeftMar    AutoW(20)
+#define kMidW   (ScreenW - 2*kLeftMar)
+//带左侧竖线的左边距
+#define kLeftMidW   (ScreenW - kLeftMar - AutoW(38))
+
 #define Iphone6W       375.0
 #define Iphone6H       667.0
 //自适应大小

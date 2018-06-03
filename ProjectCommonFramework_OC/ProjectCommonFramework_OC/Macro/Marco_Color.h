@@ -59,29 +59,30 @@
 //#define NarBarOrTabBarColor
 
 //MARK: -------------NavBarColor
-    #define NavBarBgColor           LTColorHex(0x24273E)
-    #define NavBarTitleColor          WhiteCor
-    #define NavBarSubColor          WhiteCor
-    #define NavBarBtmLineColor   LTBlackColor
+    #define NavBarBgColor           QGHWhiteCor
+    #define NavBarTitleColor        QGHBlackColor
+    #define NavBarSubColor          QGHColorHex(0x24273E)
+    #define NavBarRightTitleCoror   QGHBlackColor
+    #define NavBarBtmLineColor      RGB(228, 231, 239)
 
 //MARK: -------------TabBarColor
-    #define TabBarBgCoror           LTColorHex(0xFFFFFF)
-    #define TabBarMaskCoror       LTColorHexA(0xFF0000,0.1)
-    #define TabBarSelCoror           LTColorHex(0xF54A40)
-    #define TabBarNorCoror          LTColorHex(0x848999)
+    #define TabBarBgCoror           QGHColorHex(0xFFFFFF)
+    #define TabBarMaskCoror         QGHColorHexA(0xFF0000,0.1)
+    #define TabBarSelCoror          QGHColorHex(0xF54A40)
+    #define TabBarNorCoror          QGHColorHex(0x848999)
 
 #else
 
 //MARK: -------------黑色导航Color
-    #define NavBarBgCoror           WhiteCor
-    #define NavBarTitleCoror        LTTitleColor
-    #define NavBarSubCoror          LTTitleColor
-    #define NavBarRightTitleCoror   LTBlueFontColor
+    #define NavBarBgCoror           QGHColorHex(0x262626)
+    #define NavBarTitleCoror        QGHWhiteCor
+    #define NavBarSubCoror          QGHColorHex(0x262626)
+    #define NavBarRightTitleCoror   QGHWhiteCor
     #define NavBarBtmLineCoror      ClearColor
 
 //MARK: -------------黑色TabBarColor
-    #define TabBarBgCoror           LTColorHex(0x262626)
-    #define KlineNavBlackBG         LTColorHex(0x202020)
+    #define TabBarBgCoror           QGHColorHex(0x262626)
+    #define KlineNavBlackBG         QGHColorHex(0x202020)
     #define TabBarSelCoror          RGB(53, 115, 250)
     #define TabBarNorCoror          RGB(97, 95, 119)
 
