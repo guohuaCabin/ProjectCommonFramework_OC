@@ -58,7 +58,7 @@
 		1A9C729F20A6C4C400F47441 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C729B20A6C4C400F47441 /* AppDelegate.m */; };
 		1A9C72A020A6C4C400F47441 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C729D20A6C4C400F47441 /* main.m */; };
 		1A9C72A120A6C4C400F47441 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C729E20A6C4C400F47441 /* Info.plist */; };
-		F5C97C5EB421512E6A61228B /* Pods_ProjectCommonFramework_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB75426C64A4939ECA943B9 /* Pods_ProjectCommonFramework_OC.framework */; };
+		D67EB7A85D0BE19780C6AAAC /* libPods-ProjectCommonFramework_OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BEB75D519055F584D59C0E /* libPods-ProjectCommonFramework_OC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,7 +195,7 @@
 		1A9C72BB20A6C88000F47441 /* Macro_Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro_Constant.h; sourceTree = "<group>"; };
 		1A9C72BC20A6C9DF00F47441 /* Marco_NFC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marco_NFC.h; sourceTree = "<group>"; };
 		1A9C72BD20A6D8DC00F47441 /* QGH_Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QGH_Category.h; sourceTree = "<group>"; };
-		8CB75426C64A4939ECA943B9 /* Pods_ProjectCommonFramework_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectCommonFramework_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3BEB75D519055F584D59C0E /* libPods-ProjectCommonFramework_OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectCommonFramework_OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E434A18B1C0768692680B962 /* Pods-ProjectCommonFramework_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectCommonFramework_OC.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ProjectCommonFramework_OC/Pods-ProjectCommonFramework_OC.debug.xcconfig"; sourceTree = "<group>"; };
 		EC33668D1E356E63278EFAA1 /* Pods-ProjectCommonFramework_OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectCommonFramework_OC.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ProjectCommonFramework_OC/Pods-ProjectCommonFramework_OC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,7 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5C97C5EB421512E6A61228B /* Pods_ProjectCommonFramework_OC.framework in Frameworks */,
+				D67EB7A85D0BE19780C6AAAC /* libPods-ProjectCommonFramework_OC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,7 +681,7 @@
 		2D7864B49AF447CA9D37D0CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8CB75426C64A4939ECA943B9 /* Pods_ProjectCommonFramework_OC.framework */,
+				B3BEB75D519055F584D59C0E /* libPods-ProjectCommonFramework_OC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -880,7 +880,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ProjectCommonFramework_OC/Pods-ProjectCommonFramework_OC-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectCommonFramework_OC/Pods-ProjectCommonFramework_OC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9CAED06B016A64DD6BB70501 /* [CP] Check Pods Manifest.lock */ = {
@@ -907,13 +907,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ProjectCommonFramework_OC/Pods-ProjectCommonFramework_OC-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ProjectCommonFramework_OC/Pods-ProjectCommonFramework_OC-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectCommonFramework_OC/Pods-ProjectCommonFramework_OC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1128,10 +1131,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectCommonFramework_OC/ProjectCommonFramework_OC.pch";
 				INFOPLIST_FILE = ProjectCommonFramework_OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "guohua.Project-QGH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1151,10 +1151,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectCommonFramework_OC/ProjectCommonFramework_OC.pch";
 				INFOPLIST_FILE = ProjectCommonFramework_OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "guohua.Project-QGH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1167,11 +1164,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProjectCommonFramework_OCTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "guohua.Project-QGHTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1185,11 +1178,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProjectCommonFramework_OCTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "guohua.Project-QGHTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1203,11 +1192,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectCommonFramework_OC/ProjectCommonFramework_OC.pch";
 				INFOPLIST_FILE = ProjectCommonFramework_OCUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "guohua.Project-QGHUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1221,11 +1206,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectCommonFramework_OC/ProjectCommonFramework_OC.pch";
 				INFOPLIST_FILE = ProjectCommonFramework_OCUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "guohua.Project-QGHUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

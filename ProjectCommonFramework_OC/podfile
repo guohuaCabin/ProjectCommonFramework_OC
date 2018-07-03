@@ -1,4 +1,4 @@
-xcodeproj 'ProjectCommonFramework_OC/ProjectCommonFramework_OC.xcodeproj'
+xcodeproj 'ProjectCommonFramework_OC.xcodeproj'
 
 platform :ios, '9.0'
 target "ProjectCommonFramework_OC" do
@@ -10,13 +10,13 @@ pod 'Bugly'
 pod 'SDWebImage', '~> 4.0'
 
 #富文本的 label，可点击链接
-pod 'TTTAttributedLabel'
+#pod 'TTTAttributedLabel'
 
 #正则表达式
-pod 'RegexKitLite-NoWarning', '1.1.0'
+#pod 'RegexKitLite-NoWarning', '1.1.0'
 
 #html 解析
-pod 'hpple', '0.2.0'
+#pod 'hpple', '0.2.0'
 
 #hud 提示框
 pod 'MBProgressHUD'
@@ -25,7 +25,7 @@ pod 'MBProgressHUD'
 pod 'MJRefresh'
 
 #效果很酷炫的下拉刷新控件
-pod 'CBStoreHouseRefreshControl'
+#pod 'CBStoreHouseRefreshControl'
 
 #下拉刷新的动画 for UIScrollView(swift)
 #pod 'PullToBounce'
@@ -34,44 +34,44 @@ pod 'CBStoreHouseRefreshControl'
 #pod 'DGElasticPullToRefresh'
 
 #实现弹性物理效果的下拉刷新，神奇的贝塞尔曲线，配合UIDynamic写的一个拟物的下拉刷新动画。
-pod 'KYJellyPullToRefresh', '~> 1.1.0'
+#pod 'KYJellyPullToRefresh', '~> 1.1.0'
 
 #文字滚动
-pod 'MarqueeLabel'
+#pod 'MarqueeLabel'
 
 #有文字输入时，能根据键盘是否弹出来调整自身显示内容的位置
-pod 'TPKeyboardAvoiding', '1.2.4'
+#pod 'TPKeyboardAvoiding', '1.2.4'
 
 #状态栏提示框
-pod 'JDStatusBarNotification'
+#pod 'JDStatusBarNotification'
 
 #block 工具包。将很多需要用 delegate 实现的方法整合成了 block 的形式
-pod 'BlocksKit', '2.2.5'
+#pod 'BlocksKit', '2.2.5'
 
 #基于响应式编程思想的 oc 实践（是个好东西）
-use_frameworks!
-pod 'ReactiveCocoa' #, '~> 7.0'
+#use_frameworks!
+#pod 'ReactiveCocoa' #, '~> 7.0'
 
 
 #自动布局（加约束）
-pod 'SDAutoLayout', '2.1.0' 
+#pod 'SDAutoLayout', '2.1.0' 
 #pod 'Masonry', '0.5.3'
 
 #内存缓存
-pod 'PINCache'
-pod 'YYCache'
+#pod 'PINCache'
+#pod 'YYCache'
 
 #帧动画的库
-pod 'JazzHands', '2.0.0'
+#pod 'JazzHands', '2.0.0'
 
 #存储密码
-pod 'SSKeychain', '1.2.3'
+#pod 'SSKeychain', '1.2.3'
 
 #下拉界面的图片,放在tableview 最上面
-pod 'APParallaxHeader', '0.1.6'
+#pod 'APParallaxHeader', '0.1.6'
 
 #一个形象字体库。通过扩展 NSString 来轻松使用 FontAwesome 字体, 轻松实现基本图标问题;
-pod 'FontAwesome+iOS', :git => 'https://github.com/alexdrone/ios-fontawesome'
+#pod 'FontAwesome+iOS', :git => 'https://github.com/alexdrone/ios-fontawesome'
 
 
 #第三方SDk
